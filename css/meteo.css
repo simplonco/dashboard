@@ -1,0 +1,66 @@
+#row_meteo
+{
+	background-color:white;
+	height:270px;
+	box-shadow: 1px 1px 1px #A2A6A6;
+	padding:5px;
+	box-shadow: 0 14px 20px 0 rgba(50,50,50,0.2);
+}
+
+#titre_mto
+{
+	background-color:#FF0066;
+	color:white;
+	border-radius: 5px;
+	text-align: center;
+	font : 50% impact, sans-serif;
+	font-size:19px;
+	font-weight:normal;
+	letter-spacing : 0.2em;
+	width: 95%; /* 380px ÷ 400px = .95 */
+	margin-top:5%; /* 10px ÷ 400px = .025 */
+	margin-right : 2.5%; /* 10px ÷ 400px = .025 */
+	margin-bottom: 45px;
+	margin-left: 2.5%; /* 10px ÷ 400px = .025 */
+}
+
+#icone_mto
+{
+	width:35%; /*  180px ÷ 400px = .45 */
+	height:auto; /*  140px ÷ 350px = .4 */
+	margin-top:5%;
+	margin-left: 5%;
+	display:inline-block;
+}
+
+#temperature_mto
+{
+	width: 15%; /*  60 px ÷ 400px = .15 */
+	height:15%; /*  60 px ÷ 400px = .15 */
+	font-size:20px;
+	margin-left:8%;
+	margin-top:10%;
+	font : verdana;
+	display:inline-block;
+}
+
+#desc_mto
+{
+	font-size:20px;
+	font : verdana;
+	display:inline-block;
+	margin-top: 15%;
+}
+
+#type_image
+{
+	width:100%;
+	height:auto;
+}
+p
+{
+	width: 100%; /*  60 px ÷ 60px = 1 */
+	height:100%; /*  60 px ÷ 60px = 1 */
+	line-height:60px; /*  60 px ÷ 400px = .15 */
+	text-align:center;
+}

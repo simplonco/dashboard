@@ -1,0 +1,26 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Le dashboard de Simplon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tess ATTIE",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "cookie-parser": "latest",
+    "cool-ascii-faces": "~1.3.x",
+    "express": "*",
+    "express-session": "latest",
+    "multer": "~0.1.6",
+    "pg": "4.x",
+    "request": "*",
+    "socket.io": "*"
+  },
+  "engines": {
+    "node": "0.12.4"
+  }
+}

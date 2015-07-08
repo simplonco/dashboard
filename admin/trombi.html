@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simplon | Trombi</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.4 -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- fullCalendar 2.2.5-->
+    <link href="../plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="../plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print' />
+    <!-- Theme style -->
+    <link href="../dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="../dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/admin.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+      
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>S</b></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Simplon</b></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+                  <!-- Menu Body -->
+                  <!-- Menu Footer-->
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+          </div>
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search..."/>
+              <span class="input-group-btn">
+                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="active">
+              <a href="../index.html">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="active treeview">
+              <a href="admin/administration.html">
+                <i class="fa fa-dashboard"></i> <span>Administration</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="../admin/trombi.html"><i class="fa fa-circle-o"></i>Trombinoscope</a></li>
+                <li><a href="../admin/boite.html"><i class="fa fa-circle-o"></i>Boîte à message</a></li>
+                <li><a href="../admin/liens.html"><i class="fa fa-circle-o"></i>Liens utils</a></li>
+              </ul>
+            </li>
+            <li><a href="../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Trombinoscope
+            <small>Panneau de configuration</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="../index.html"><i class="fa fa-dashboard"></i>Administration</a></li>
+            <li class="active">Trombinoscope</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        
+        <section class="content_trombi">
+            <button type="button" id = "nouvelle_promotion" class="btn btn-primary btn-lg btn-block">Nouvelle Promotion</button>
+            <div id = "window">
+					<form name = "formulaire_nouvelle_promo">
+					  <div class="form-group">
+					    <label for="numero_promo">Numéro de Promo</label>
+					    <input type="text" class="form-control" id="numero_promo" placeholder="Numéro de promo">
+					  </div>
+					  <div class="form-group">
+					    <label for="lieu">Lieu</label>
+					    <input type="text" class="form-control" id="lieu" placeholder="Indiquez le lieu">
+					  </div>
+					  <button type="submit" class="btn btn-default" id = "nouvelle_promo_submit">Submit</button>
+					</form>
+					  <button type="submit" class="btn btn-default" id = "nouvelle_promo_close">Close</button>
+				</div>
+				<div id = "message_de_confirmation"></div>
+		 <div id = "first_content">
+		 	<div id = "les_promotions">
+            	<h4 id = "promotions">PROMOTIONS</h4>
+				<a href="#" id = "promo1" class="btn btn-primary btn-lg active" role="button">Promo 1</a></br>
+				<a href="#" id = "promo2" class="btn btn-primary btn-lg active" role="button">Promo 2</a></br>
+				<a href="#" id = "promo3" class="btn btn-primary btn-lg active" role="button">Promo 3</a></br>
+			</div>
+		</div>
+
+		<div id = "second_content">
+			<h2 id = "trombi_title">Promotion 1</h2>
+			<div id = "boutons_ajout">
+				<button type="button" class="btn btn-primary btn-lg active" id = "add_student_button">+</button>
+				<button type="button" class="btn btn-default btn-lg active" id = "delete_student">-</button>
+				<button class="btn btn-default" type="submit" id = "confirm_delete">Delete</button>
+			</div>
+			<div id = "add_student">
+				<form name = "form_nouvel_eleve" enctype="multipart/form-data">
+				  <div class="form-group">
+				    <label for="nom">Nom</label>
+				    <input type="text" class="form-control" id="student_nom" placeholder="Entrez le nom de l'élève">
+				  </div>
+				  <div class="form-group">
+				    <label for="prenom">Prénom</label>
+				    <input type="text" class="form-control" id="student_prenom" placeholder="Entrez le prénom de l'élève">
+				  </div>
+				  <div class="form-group">
+				    <label for="promo">Promo</label>
+				    <input type="text" class="form-control" id="student_promo" placeholder="Entrez le numéro de promo de l'élève">
+				  </div>
+				  <div class="form-group">
+				    <label for="picture">Photo</label>
+				    <input type="file" id="student_picture" name = 'student_picture'>
+				    <p class="help-block">Rajoutez la photo de l'élève.</p>
+				  </div>
+				  <button type="submit" class="btn btn-default" id = "nouvel_eleve_submit">Submit</button>
+				</form>
+				<button type="submit" class="btn btn-default" id = "nouvel_eleve_close">Close</button>
+			</div>
+			<div id = "partie_trombi">
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+				<div id = "eleve">
+					<div id = "photo_eleve">
+						<img src="../images/trombi/avatar.png" id = "photo_particuliere">
+					</div>
+					<div id = "nom_eleve"><span>NOM</span><span>Prénom</span></div>
+					<div class="checkbox" id = "checkbox_students">
+					  <label>
+					    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+					  </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- /.content -->
+<!-- 		
+
+      <footer class="main-footer">
+      </footer> -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- jQuery UI 1.11.1 -->
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Slimscroll -->
+    <script src="../plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='../plugins/fastclick/fastclick.min.js'></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/app.min.js" type="text/javascript"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js" type="text/javascript"></script>
+    <!-- fullCalendar 2.2.5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+    <script src="../plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+    <!-- Page specific script -->
+    <script src="../js/trombi.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    // Connexion au server permettant l'échange client-serveur
+      var socket = io.connect();
+
+      $("#nouvelle_promo_submit").click(function(){
+      	var numero = document.forms['formulaire_nouvelle_promo'].elements['numero_promo'].value;
+      	var lieu = document.forms['formulaire_nouvelle_promo'].elements['lieu'].value;
+      	socket.emit('nouvelle_promo', {numero_promo : numero, lieu_promo : lieu});
+      	$('#window').hide();
+      });
+
+      socket.on("confirmation_nouvelle_promo", function(confirmation_nouvelle_promo){
+      	alert(confirmation_nouvelle_promo);
+      });
+
+      $("#nouvel_eleve_submit").click(function(){
+      	var nom = document.forms['form_nouvel_eleve'].elements['student_picture'].value;
+      	alert(nom['type']);
+      	// var prenom = document.forms['form_nouvel_eleve'].elements['lieu'].value;
+      	// var image = document.forms['form_nouvel_eleve'].elements['lieu'].value;
+      	// var promo = document.forms['form_nouvel_eleve'].elements['lieu'].value;
+	      });
+
+    </script>
+  </body>
+</html>

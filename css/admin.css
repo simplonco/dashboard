@@ -1,0 +1,310 @@
+#nouvelle_promo_close
+{
+	float:right;
+	display:inline-block;
+	margin-top:-34px;
+}
+
+#num_submit_b
+{
+	margin-top:5px;
+}
+
+#title_submit_b
+{
+	margin-top:5px;
+}
+
+.titre_change
+{
+	width: 90%;
+	margin-left: 40px;
+	background-color: white;
+	box-shadow: 0 14px 20px 0 rgba(50,50,50,0.2);
+	padding:10px;
+	margin-top:20px;
+}
+.form-inline
+{
+	margin-top:15px;
+}
+.explication
+{
+	margin-left:15px;
+}
+.chiffres_cles
+{
+	width: 90%;
+	margin-left: 40px;
+	background-color: white;
+	box-shadow: 0 14px 20px 0 rgba(50,50,50,0.2);
+	padding:10px;
+	margin-top:20px;
+}
+.login_change
+{
+	background-color: white;
+	padding: 10px;
+	width:90%;
+	box-shadow: 0 14px 20px 0 rgba(50,50,50,0.2);
+	margin-top:20px;
+	margin-left:40px;
+}
+#nouvel_eleve_close
+{
+	float:right;
+	display:inline-block;
+	margin-top:-34px;
+}
+
+#admin_menu 
+{
+	width:90%;
+	margin:auto;
+}
+
+#nouvelle_promo_submit
+{
+	display:inline-block;
+}
+
+#nouvelle_promotion
+{
+	width:60%;
+	margin:auto;
+	margin-top:40px;
+}
+#promo2, #promo3
+{
+	width:100%;
+	margin-top:30px;
+}
+
+#promo1
+{
+	width:100%;
+	margin-top:10px;
+}
+
+#promotions
+{
+	text-align:center;
+}
+
+#les_promotions
+{
+	margin:auto;
+	margin-top:20px;
+	padding:15px;
+	width:60%;
+	background-color:white;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+#content_trombi
+{
+	height:1000px;
+}
+#window
+{
+	display:none;
+	width:40%;
+	margin:auto;
+	margin-top:20px;
+	background-color:white;
+	padding:15px;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+#confirm_delete
+{
+	display:none;
+	float:right;
+	margin:auto;
+}
+
+#add_student
+{
+	background-color: white;
+	padding:15px;
+	margin-left:30px;
+	width:60%;
+	margin-top:10px;
+	display:none;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+
+#checkbox_students
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	display:none;
+}
+#second_content
+{
+	display:none;
+	height : 100%;
+	width:100%;
+	margin-bottom:15px;
+}
+
+#boutons_ajout
+{
+	margin-left:30px;
+	width : 95%;
+}
+
+#partie_trombi
+{
+	width:100%;
+	height:80%;
+	margin:auto;
+	text-align:center;
+}
+
+#eleve
+{
+	width:17%;
+	float:left;
+	display:inline-block;
+	margin-right:55px;
+	margin-left:30px;
+	height:200px;
+	padding:5px;
+	margin-top:55px;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+
+#trombi_title
+{
+	margin-left: 30px;
+}
+
+#photo_eleve
+{
+	width:140px;
+	height:140px;
+	margin:auto;
+}
+
+#photo_particuliere
+{
+	width:100%;
+	height:100%;
+}
+
+#nom_eleve
+{
+	width:80%;
+	margin:auto;
+	margin-top:15px;
+	text-align:center;
+}
+
+#fist_content
+{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.boutons_modification_messages
+{
+	margin-left:30px;
+	margin-top: 30px;	
+	display: inline-block;
+}
+
+.boutons_pagination
+{
+	display: inline-block;
+	float:right;
+	margin-right:30px;
+	margin-top: 30px;
+}
+
+.le_message
+{
+	width: 70%;
+	padding:10px;
+	text-align: center;
+	background-color: white;
+	height:200px;
+	margin:auto;
+	margin-top:25px;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+
+.les_messages
+{
+	margin-bottom: 10px;
+}
+
+.titre_messages
+{
+	margin-left:30px;
+	margin-top:40px;
+	font-weight: bold;
+}
+
+.title_message
+{
+	padding-top: 10px;
+	margin:auto;
+	height:20%;
+	width:90%;
+	font-weight: bold;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+
+.nom_message
+{
+	display: inline-block;
+	float:left;
+	margin-top:40px;
+	font-weight: bold;
+	border-top:1px solid grey;
+}
+.date_message
+{
+	display: inline-block;
+	float: right;
+	margin-top: 40px;
+	border-top: 1px solid grey;
+}
+
+.text_message
+{
+	margin-top:15px;
+}
+
+#formulaire_nouveau_message
+{
+	width:50%;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	padding:10px;
+	margin-left:30px;
+	display:none;
+}
+
+#checkbox_message
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	
+}

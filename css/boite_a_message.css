@@ -1,0 +1,16 @@
+.le_message:hover
+{
+	background-color: #EBEDEC;
+}
+#nouveau_message_close
+{
+	float:right;
+	display:inline-block;
+	margin-top:-34px;
+}
+
+#bouton_ajout_formulaire 
+{
+	background-color: #FF0066;
+	border:1px solid #FF0066;
+}

@@ -1,0 +1,31 @@
+.le_commentaire
+{
+	width:60%;
+	height:auto;
+	background-color:white;
+	margin-left:20px;
+	margin-top:20px;
+	text-align: center;
+	-webkit-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	-moz-box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+	box-shadow: 1px 1px 14px -1px rgba(69,69,69,1);
+}
+
+#delete_comment
+{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.partie_texte
+{
+	padding:10px;
+}
+
+#checkbox_position 
+{
+	display: inline-block;
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+}

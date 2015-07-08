@@ -1,0 +1,88 @@
+#nouvelle_promotion
+{
+	width:60%;
+	margin:auto;
+}
+
+.les_promotions
+{
+	padding:15px;
+	text-align:center;
+	height:475px;
+	margin:auto;
+	width:97%;
+	background-color:white;
+	box-shadow: 0 14px 20px 0 rgba(50,50,50,0.2);
+}
+
+#photo_aggrandit 
+{
+	width:40%;
+	height:auto;
+	margin-top:10px;
+}
+
+#tooltip
+{
+	display:none;
+}
+
+.block_eleve
+{
+	width:93%;
+	margin:auto;
+	overflow-y:scroll;
+	height:350px;
+	padding:5px;
+	margin-top:25px;
+	background-color: white;
+}
+
+#trombi_scrollbar::-webkit-scrollbar{
+width:6px;
+background-color:#d1cfca;
+} 
+
+#trombi_scrollbar::-webkit-scrollbar-thumb{
+background-color:#e5e4e0;
+border:1px solid #d1cfca;
+border-radius:10px;
+}
+
+#trombi_scrollbar::-webkit-scrollbar-track{
+border:1px gray solid;
+border-radius:10px;
+-webkit-box-shadow:0 0 6px gray inset;
+} 
+
+#eleve 
+{
+	display:inline-block;
+	width:18%;
+	box-shadow: 0 14px 30px 0 rgba(50,50,50,0.3);
+	margin-top:20px;
+	margin-left:13px;
+	margin-right:13px;
+	padding:5px;
+}
+
+.photo_eleve
+{
+	width:90%;
+	height:auto;
+	margin:auto;
+}
+
+#nom_eleve
+{
+	width:100%;
+	margin:auto;
+	margin-top:15px;
+	text-align:center;
+}
+
+#photo_particuliere
+{
+	width:100%;
+	height:100%;
+}
